@@ -1,7 +1,8 @@
 1. to create new environment
   - conda create -p <env name> python==3.8 -y
 2. to activate new env 
-   - conda activate <env name> note - in terminal use command prompt instead of powershell. 
+   - conda activate <env name> 
+   note - in terminal use command prompt instead of powershell. 
 3. To initialise GIt
 	- git init
 4. git add <file_name>
@@ -17,3 +18,4 @@
 9. git pull
 	- to update changes from github into local machine.
 10. .gitignore  --> to not clone some files on github 
+11. -e . --> used to run setup.py whenever requirement.txt is run.
