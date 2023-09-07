@@ -1,3 +1,6 @@
+''' READING DATA FROM THE DATA SOURCE DIVIDIG IT INTO TRAIN AND TEST SET , ALSO STORING IT INTO ARTIFACTS FOLDER.
+    LOGGING ALL ENTRIES INTO LOGS BY USING logger.py'''
+
 import os
 import sys
 from src.logger import logging
@@ -6,6 +9,8 @@ import pandas as pd
 
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
+from src.components.data_transformation import DataTransformation
+from src.components.data_transformation import DataTransformationConfig
 
 @dataclass
 class DataIngestionConfig:
@@ -44,5 +49,8 @@ class Dataingestion:
 if __name__ == "__main__":
     obj = Dataingestion()
     train_data , test_data = obj.initiate_data_ingestion()
+    
 
+    data_transformation = DataTransformation()
+    train_arr,test_arr,_=data_transformation.initiate_data_transformation(train_data,test_data)
 
