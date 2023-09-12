@@ -19,3 +19,4 @@
 	- to update changes from github into local machine.
 10. .gitignore  --> to not clone some files on github 
 11. -e . --> used to run setup.py whenever requirement.txt is run.
+12. tutorial 8 --> creating a pipelines
